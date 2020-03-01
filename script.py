@@ -8,7 +8,7 @@ for line in f:
     if s[0] == "GCAG":
         data.append([int(s[1]), float(s[2])])
 
-print(data)
+# print(data)
 temp_by_year = np.transpose(data)
 year = temp_by_year[0]
 temperature = temp_by_year[1]
@@ -29,8 +29,8 @@ for n in range(0, iterations):
     print("x^[", n + 1, "]=", current)
     x.append(current)
 
-print("z:", z)
-print("x:", x)
+# print("z:", z)
+# print("x:", x)
 
 plt.plot(year, x, color='green')
 plt.show()
